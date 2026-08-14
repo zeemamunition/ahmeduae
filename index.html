@@ -25,7 +25,7 @@
         <span>Visit Al Ahmed Elite Venture Co LLC • Stand #2466</span>
       </div>
       <div class="announcement-right">
-        <a href="tel:+9714358582" class="phone-link">📞 +971 4 358582</a>
+
         <a href="https://wa.me/971507959535" target="_blank" class="whatsapp-link">💬 WhatsApp Sales (+971 50
           7959535)</a>
       </div>
@@ -36,7 +36,7 @@
   <header class="site-header" id="siteHeader">
     <div class="container header-container">
       <a href="#" class="brand-logo" aria-label="Al Ahmed UAE Home">
-        <img src="alahmed-logo-.png" alt="Al Ahmed UAE Logo" class="logo-img">
+        <img src="assets/images/alahmed-logo-.png" alt="Al Ahmed UAE Logo" class="logo-img">
       </a>
 
       <nav class="main-nav">
@@ -44,6 +44,7 @@
         <a href="#products" class="nav-link">Products</a>
         <a href="#inspector" class="nav-link">Deconstruct</a>
         <a href="#clients" class="nav-link">Clients</a>
+        <a href="about.html">About Us</a>
       </nav>
 
       <div class="header-actions">
@@ -104,33 +105,8 @@
           </svg>
         </a>
         <a href="#rfq" class="btn btn-glass btn-lg">
-          Launch RFQ Specifier Tool
+          Request a quot
         </a>
-      </div>
-
-      <!-- Live Feature Cards Grid -->
-      <div class="hero-feature-cards">
-        <div class="feature-card">
-          <div class="card-icon">🏗️</div>
-          <div class="card-info">
-            <h4>450K m² Manufacturing</h4>
-            <p>High-volume precision manufacturing capacity in UAE</p>
-          </div>
-        </div>
-        <div class="feature-card">
-          <div class="card-icon">🛡️</div>
-          <div class="card-info">
-            <h4>BS 1088 & Fire Certified</h4>
-            <p>Full compliance with UAE & KSA building codes</p>
-          </div>
-        </div>
-        <div class="feature-card">
-          <div class="card-icon">🏨</div>
-          <div class="card-info">
-            <h4>5-Star Hospitality Grade</h4>
-            <p>Specified for Le Méridien, InterContinental & Embassies</p>
-          </div>
-        </div>
       </div>
     </div>
   </section>
@@ -176,26 +152,53 @@
         <button class="filter-btn" data-filter="door">Door Core</button>
         <button class="filter-btn" data-filter="veneer">Veneer</button>
         <button class="filter-btn" data-filter="acoustic">Acoustic Panels</button>
-        <button class="filter-btn" data-filter="hpl">HPL & MFC</button>
+        <button class="filter-btn" data-filter="hpl">HPL</button>
+        <button class="filter-btn" data-filter="mfc">MFC</button>
         <button class="filter-btn" data-filter="acrylic">Acrylic & PVC</button>
         <button class="filter-btn" data-filter="mosaic">Wood Mosaic</button>
       </div>
 
       <!-- Product Cards Grid -->
       <div class="products-grid" id="productsGrid">
+        <!-- Commercial Plywood Card -->
+        <div class="product-card" data-category="plywood">
+          <div class="card-media">
+            <span class="card-badge red">Cost effective</span>
+            <img src="assets/images/plywood/plywood stack.jpg" alt="Commercial Plywood">
+            <div class="media-overlay">
+              <button class="quick-view-btn" data-product="commercial-plywood">Inspect Technical Specs</button>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="card-category">Core Joinery Substrate</div>
+            <h3 class="card-title">Commercial Plywood</h3>
+            <p class="card-text">Premium interior grade hardwood plywood engineered for custom joinery, cabinetry
+              carcasses, wall panelling, and furniture manufacturing across GCC residential and commercial fit-outs.</p>
+            <div class="spec-tags">
+              <span>Hardwood Core</span>
+              <span>Termite Resistant</span>
+              <span>High Screw Holding</span>
+              <span>Smooth Face Veneer</span>
+            </div>
+            <div class="card-footer">
+              <span class="thickness-info">3.6mm - 25mm • 1220x2440mm</span>
+              <button class="btn-sample-trigger" data-product="commercial-plywood">Request Sample</button>
+            </div>
+          </div>
+        </div>
 
         <!-- Ahmed Marine Plywood Card -->
         <div class="product-card" data-category="plywood">
           <div class="card-media">
-            <span class="card-badge red">BS 1088 Certified</span>
-            <img src="assets/images/plywood/close-up-of-marine-plywood.jpg" alt="Ahmed Marine Plywood">
+            <span class="card-badge red">No Core Voids</span>
+            <img src="assets/images/plywood/marine plywood.jpg" alt="Marine Plywood">
             <div class="media-overlay">
-              <button class="quick-view-btn" data-product="plywood">Inspect Specifications</button>
+              <button class="quick-view-btn" data-product="plywood">View Specifications</button>
             </div>
           </div>
           <div class="card-body">
             <div class="card-category">Core Structural Material</div>
-            <h3 class="card-title">Ahmed Marine Plywood</h3>
+            <h3 class="card-title">Marine Plywood</h3>
             <p class="card-text">High-density hardwood core bonded with 100% WBP Phenolic resin. Ideal for waterfront
               structures, high-moisture interiors, and heavy shuttering formwork.</p>
             <div class="spec-tags">
@@ -205,7 +208,7 @@
             </div>
             <div class="card-footer">
               <span class="thickness-info">6mm - 25mm thickness</span>
-              <button class="btn-sample-trigger" data-product="plywood">View Specifications</button>
+              <button class="btn-sample-trigger" data-product="plywood">Request sample</button>
             </div>
           </div>
         </div>
@@ -214,14 +217,14 @@
         <div class="product-card" data-category="plywood">
           <div class="card-media">
             <span class="card-badge red">Civil Defense Fire Approved</span>
-            <img src="assets/images/plywood/close-up-of-marine-plywood.jpg" alt="Fire-Resistant Plywood">
+            <img src="assets/images/plywood/plywood1.jpg" alt="Fire-Resistant Plywood">
             <div class="media-overlay">
-              <button class="quick-view-btn" data-product="fr-plywood">Inspect Specifications</button>
+              <button class="quick-view-btn" data-product="fr-plywood">View Specifications</button>
             </div>
           </div>
           <div class="card-body">
             <div class="card-category">Core Structural Material</div>
-            <h3 class="card-title">Ahmed Fire-Resistant (FR) Plywood</h3>
+            <h3 class="card-title">Fire-Resistant (FR) Plywood</h3>
             <p class="card-text">Flame-retardant pressure-treated hardwood core designed to delay ignition and minimize
               smoke emission in public and commercial interiors.</p>
             <div class="spec-tags">
@@ -231,7 +234,7 @@
             </div>
             <div class="card-footer">
               <span class="thickness-info">6mm - 25mm thickness</span>
-              <button class="btn-sample-trigger" data-product="fr-plywood">View Specifications</button>
+              <button class="btn-sample-trigger" data-product="fr-plywood">Request sample</button>
             </div>
           </div>
         </div>
@@ -239,15 +242,15 @@
         <!-- MR MDF Card -->
         <div class="product-card" data-category="mdf">
           <div class="card-media">
-            <span class="card-badge green">MR Green Core Grade</span>
+            <span class="card-badge green"> Density 720 kg/m³</span>
             <img src="assets/images/MDF/MR MDF (moisture resistant).jpg" alt="Moisture Resistant MR MDF Board">
             <div class="media-overlay">
-              <button class="quick-view-btn" data-product="mrmdf">Inspect Green Resin Core</button>
+              <button class="quick-view-btn" data-product="mrmdf">View Specifications</button>
             </div>
           </div>
           <div class="card-body">
             <div class="card-category">Humidity-Resistant Core</div>
-            <h3 class="card-title">Moisture Resistant (MR) Green Core MDF</h3>
+            <h3 class="card-title">Moisture Resistant (MR)MDF</h3>
             <p class="card-text">Formulated with premium Melamine-Urea-Formaldehyde (MUF) resin & green indicator
               pigment for high humidity stability in kitchen joinery, bathroom vanities & tropical UAE interiors.</p>
             <div class="spec-tags">
@@ -266,10 +269,10 @@
         <!-- FR MDF Card -->
         <div class="product-card" data-category="mdf">
           <div class="card-media">
-            <span class="card-badge red">Civil Defense FR Rated</span>
+            <span class="card-badge red">Density 720 kg/m³</span>
             <img src="assets/images/MDF/FR MDF(fire resistant).jpg" alt="Fire Retardant FR MDF Board">
             <div class="media-overlay">
-              <button class="quick-view-btn" data-product="frmdf">Inspect Flame Retardant Core</button>
+              <button class="quick-view-btn" data-product="frmdf">View Specifications</button>
             </div>
           </div>
           <div class="card-body">
@@ -297,7 +300,7 @@
             <span class="card-badge red">Standard Precision Core</span>
             <img src="assets/images/MDF/MDF plain.jpg" alt="Plain Standard MDF Board">
             <div class="media-overlay">
-              <button class="quick-view-btn" data-product="plainmdf">Inspect Density Profile</button>
+              <button class="quick-view-btn" data-product="plainmdf">View Specifications</button>
             </div>
           </div>
           <div class="card-body">
@@ -321,10 +324,10 @@
         <!-- Melamine Faced MDF (MF MDF) Card -->
         <div class="product-card" data-category="mdf">
           <div class="card-media">
-            <span class="card-badge red">✨ Edge Banding Included</span>
+            <span class="card-badge red">Edge Banding Included</span>
             <img src="assets/images/MDF/MF mdf.jpg" alt="Melamine Faced MDF (MF MDF)">
             <div class="media-overlay">
-              <button class="quick-view-btn" data-product="mfmdf">Inspect Specs & Edgeband</button>
+              <button class="quick-view-btn" data-product="mfmdf">View Specifications</button>
             </div>
           </div>
           <div class="card-body">
@@ -333,14 +336,14 @@
             <p class="card-text">Thermally fused melamine decor paper on high-density MDF core. Ultra-smooth surface for
               interior wall cladding, wardrobes, and commercial workstations. Supplied with matching edge banding.</p>
             <div class="spec-tags">
-              <span>✨ Matching Edge Banding</span>
-              <span>250+ Color Patterns</span>
+              <span>Matching Edge Banding</span>
+              <span>50+ Color Patterns</span>
               <span>Scratch Resistant</span>
-              <span>E0 / CARB 2 Compliant</span>
+              <span>E0 / E1 Compliant</span>
             </div>
             <div class="card-footer">
               <span class="thickness-info">18mm Standard Stock</span>
-              <button class="btn-sample-trigger" data-product="mfmdf">View Specifications</button>
+              <button class="btn-sample-trigger" data-product="mfmdf">Request sample</button>
             </div>
           </div>
         </div>
@@ -351,14 +354,15 @@
             <span class="card-badge red">Structural Grade Beam</span>
             <img src="assets/images/LVL/lvl stack.jpg" alt="LVL Laminated Veneer Lumber">
             <div class="media-overlay">
-              <button class="quick-view-btn" data-product="lvl">Inspect Structural Specs</button>
+              <button class="quick-view-btn" data-product="lvl">View Specifications</button>
             </div>
           </div>
           <div class="card-body">
             <div class="card-category">Engineered Timber & Beams</div>
             <h3 class="card-title">Laminated Veneer Lumber (LVL)</h3>
             <p class="card-text">High-performance engineered timber beam manufactured by layering parallel wood veneers
-              under heat & pressure. Superior bending strength with zero twisting or warping.</p>
+              under heat & pressure. Superior strength with zero twisting or warping. Ideal for door frames and timber
+              substitute.</p>
             <div class="spec-tags">
               <span>Parallel Grain Strength</span>
               <span>High Tensile Beam</span>
@@ -367,7 +371,7 @@
             </div>
             <div class="card-footer">
               <span class="thickness-info">38mm - 90mm | Up to 12m</span>
-              <button class="btn-sample-trigger" data-product="lvl">View Specifications</button>
+              <button class="btn-sample-trigger" data-product="lvl">Request sample</button>
             </div>
           </div>
         </div>
@@ -375,26 +379,55 @@
         <!-- Door Core Panel Card -->
         <div class="product-card" data-category="door">
           <div class="card-media">
-            <span class="card-badge red">FD60 / FD90 Fire Rated</span>
+            <span class="card-badge red">Strong & stable</span>
             <img src="assets/images/door core/door core animated.jpg" alt="Door Core Panel">
             <div class="media-overlay">
-              <button class="quick-view-btn" data-product="doorcore">Inspect Door Core Specs</button>
+              <button class="quick-view-btn" data-product="doorcore">View Specifications</button>
             </div>
           </div>
           <div class="card-body">
-            <div class="card-category">Fire & Acoustic Door Core</div>
-            <h3 class="card-title">Engineered Fire & Acoustic Door Cores</h3>
-            <p class="card-text">High-density solid particle and tubular door core blanks engineered for FD30 / FD60 /
-              FD90 fire rated door assemblies and STC acoustic insulation in commercial towers.</p>
+            <div class="card-category">Door Core</div>
+            <h3 class="card-title">Solid Door Cores</h3>
+            <p class="card-text">High-density, engineered door cores designed to deliver strength, stability,
+              durability and enhanced acoustic performance.Provides a reliable foundation for veneer, HPL, PVC, and
+              other decorative finishes, making
+              them suitable for residential, commercial, hospitality, and high-traffic applications. </p>
             <div class="spec-tags">
-              <span>FD30 / FD60 / FD90 Approved</span>
-              <span>Tubular & Solid Core</span>
+              <span>NFR</span>
+              <span>Solid Core</span>
               <span>High Screw Retention</span>
-              <span>STC Acoustic Isolation</span>
             </div>
             <div class="card-footer">
               <span class="thickness-info">33mm, 44mm, 54mm Door Cores</span>
-              <button class="btn-sample-trigger" data-product="doorcore">View Specifications</button>
+              <button class="btn-sample-trigger" data-product="doorcore">Request sample</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slotted & Perforated Acoustic Panel Card -->
+        <div class="product-card" data-category="acoustic">
+          <div class="card-media">
+            <span class="card-badge red">NRC 0.85 Rated</span>
+            <img src="assets/images/acoustic panel/acoustic panel 3d exploded.PNG"
+              alt="Slotted & Perforated Acoustic Panel">
+            <div class="media-overlay">
+              <button class="quick-view-btn" data-product="acoustic">View Specifications</button>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="card-category">Sound Absorption System</div>
+            <h3 class="card-title">Slotted & Perforated Acoustic Panels</h3>
+            <p class="card-text">Engineered acoustic wall and ceiling paneling designed for auditoriums, conference
+              halls, and luxury interiors to eliminate echo and reduce noise reverberation.</p>
+            <div class="spec-tags">
+              <span>NRC 0.85 Rating</span>
+              <span>Class B1 Fire Rated</span>
+              <span>PET Acoustic Felt</span>
+              <span>Veneer / Melamine Finish</span>
+            </div>
+            <div class="card-footer">
+              <span class="thickness-info">16mm - 18mm Thickness</span>
+              <button class="btn-sample-trigger" data-title="Acoustic Panel">Request sample</button>
             </div>
           </div>
         </div>
@@ -406,7 +439,7 @@
             <img src="assets/images/decorative veneer/natural veneer/natural veneer sheet.jpg"
               alt="Natural Wood Veneer">
             <div class="media-overlay">
-              <button class="quick-view-btn" data-product="natural-veneer">View Grain Swatches</button>
+              <button class="quick-view-btn" data-product="natural-veneer">View Specifications</button>
             </div>
           </div>
           <div class="card-body">
@@ -422,7 +455,7 @@
             </div>
             <div class="card-footer">
               <span class="thickness-info">Custom Book Matching</span>
-              <button class="btn-sample-trigger" data-product="natural-veneer">View Specifications</button>
+              <button class="btn-sample-trigger" data-product="natural-veneer">Request sample</button>
             </div>
           </div>
         </div>
@@ -434,22 +467,21 @@
             <img src="assets/images/decorative veneer/Recon veneer/Reconstituted veneer av101.jpeg"
               alt="Reconstituted Recon Veneer">
             <div class="media-overlay">
-              <button class="quick-view-btn" data-product="recon-veneer">Inspect Swatches (AV 101-112)</button>
+              <button class="quick-view-btn" data-product="recon-veneer">View Specifications/designs</button>
             </div>
           </div>
           <div class="card-body">
             <div class="card-category">Veneer • Engineered Recon</div>
             <h3 class="card-title">Reconstituted (Recon) Engineered Veneers</h3>
             <p class="card-text">Dye-treated and re-assembled wood block veneers ensuring 100% consistent color, grain
-              structure, and batch repeatability across large hotel projects (Swatches AV 101 to AV 112).</p>
+              structure, and batch repeatability across large projects.</p>
             <div class="spec-tags">
               <span>100% Grain Consistency</span>
               <span>Batch Repeatable</span>
               <span>Zero Defect Swatches</span>
-              <span>AV 101 - AV 112 Codes</span>
             </div>
             <div class="card-footer">
-              <span class="thickness-info">Swatches AV 101 to AV 112</span>
+              <span class="thickness-info">Predefined Swatches </span>
               <button class="btn-sample-trigger" data-product="recon-veneer">View Specifications</button>
             </div>
           </div>
@@ -461,7 +493,7 @@
             <span class="card-badge red">High-Impact & Chemical Resistant</span>
             <img src="assets/images/HPL/hpl layer diagram.jpeg" alt="HPL High Pressure Laminate">
             <div class="media-overlay">
-              <button class="quick-view-btn" data-product="hpl">Inspect Core Layers</button>
+              <button class="quick-view-btn" data-product="hpl">View Specifications</button>
             </div>
           </div>
           <div class="card-body">
@@ -483,12 +515,12 @@
         </div>
 
         <!-- MFC Board Card -->
-        <div class="product-card" data-category="hpl">
+        <div class="product-card" data-category="mfc">
           <div class="card-media">
             <span class="card-badge green">✨ Edge Banding Included</span>
             <img src="assets/images/MFC/18mm MFC.jpg" alt="MFC Melamine Faced Chipboard">
             <div class="media-overlay">
-              <button class="quick-view-btn" data-product="mfc">View Colors & Edgeband</button>
+              <button class="quick-view-btn" data-product="mfc">View Specifications</button>
             </div>
           </div>
           <div class="card-body">
@@ -509,31 +541,29 @@
           </div>
         </div>
 
-        <!-- Acrylic Panel Card -->
+        <!-- Ahmed Acrylic Crystal Board Card -->
         <div class="product-card" data-category="acrylic">
           <div class="card-media">
-            <span class="card-badge red">✨ 1mm Edge Banding Included</span>
-            <img src="assets/images/Acrylic panel/mettalic finish acrylic panel.jpg"
-              alt="Acrylic Panel Metallic Finish">
+            <span class="card-badge red">Glass Alternative • Shatterproof</span>
+            <img src="assets/images/Acrylic panel/metallic finish acrylic panel.jpg" alt="Acrylic Crystal Board">
             <div class="media-overlay">
-              <button class="quick-view-btn" data-product="acrylic">Inspect Metallic Surface</button>
+              <button class="quick-view-btn" data-product="acrylic-crystal">View Specifications</button>
             </div>
           </div>
           <div class="card-body">
-            <div class="card-category">Modern High Gloss</div>
-            <h3 class="card-title">Super Mirror Acrylic & Metallic Panels</h3>
-            <p class="card-text">Ultra-smooth PMMA acrylic sheet pressed on MDF core. Glass-like reflection with high
-              scratch resistance for luxury kitchen shutters & feature wall panels. Supplied with 1mm acrylic edgeband.
-            </p>
+            <div class="card-category">Modern High-Gloss Surface</div>
+            <h3 class="card-title">Acrylic Crystal Board</h3>
+            <p class="card-text">High-gloss acrylic layer laminated on 19mm plywood core. Offers the luxury depth and
+              reflective appeal of real glass while being 10x more impact resistant, lightweight, and shatterproof.</p>
             <div class="spec-tags">
-              <span>✨ 1mm Acrylic Edgeband</span>
-              <span>PMMA Ultra Gloss</span>
-              <span>UV Color Fast</span>
-              <span>No Orange Peel Effect</span>
+              <span>10x Impact Resistant</span>
+              <span>Scratch & Chemical Proof</span>
+              <span>Lightweight Glass Look</span>
+              <span>Matching Edgeband</span>
             </div>
             <div class="card-footer">
-              <span class="thickness-info">18mm MDF Core</span>
-              <button class="btn-sample-trigger" data-title="Acrylic Panels">Request Sample</button>
+              <span class="thickness-info">19mm Plywood • 1220x2440mm</span>
+              <button class="btn-sample-trigger" data-product="acrylic-crystal">Request Sample</button>
             </div>
           </div>
         </div>
@@ -542,9 +572,9 @@
         <div class="product-card" data-category="acrylic">
           <div class="card-media">
             <span class="card-badge blue">100% Waterproof & Termite Proof</span>
-            <img src="assets/images/pvc panel/pvc panel close up.jpg" alt="PVC Foam Board">
+            <img src="assets/images/pvc panel/pvc panel.jpg" alt="PVC Foam Board">
             <div class="media-overlay">
-              <button class="quick-view-btn" data-product="pvc">View Specs</button>
+              <button class="quick-view-btn" data-product="pvc">View Specifications</button>
             </div>
           </div>
           <div class="card-body">
@@ -570,7 +600,7 @@
             <span class="card-badge red">Handcrafted 3D Wall Art</span>
             <img src="assets/images/wood mosaic/wood mosaic.jpg" alt="Wood Mosaic Tile">
             <div class="media-overlay">
-              <button class="quick-view-btn" data-product="mosaic">Inspect 3D Geometry</button>
+              <button class="quick-view-btn" data-product="mosaic">View Specifications</button>
             </div>
           </div>
           <div class="card-body">
@@ -719,15 +749,15 @@
             <div class="rfq-feat-item">
               <div class="feat-icon">📦</div>
               <div>
-                <strong>Free Architectural Specifier Box</strong>
+                <strong>Free sample</strong>
                 <p>Physical sample swatch kit delivered to your UAE/KSA office</p>
               </div>
             </div>
             <div class="rfq-feat-item">
               <div class="feat-icon">📜</div>
               <div>
-                <strong>Civil Defense Certificate Packet</strong>
-                <p>Testing reports for fire rating and BS 1088 marine compliance</p>
+                <strong>Certificate Packet</strong>
+                <p>Testing reports for fire rating marine compliance</p>
               </div>
             </div>
           </div>
@@ -769,7 +799,7 @@
                 <label for="rfqMaterial">Product Material Required *</label>
                 <select id="rfqMaterial" required>
                   <option value="">Select Material...</option>
-                  <option value="Marine Plywood">Marine Plywood (BS 1088)</option>
+                  <option value="Marine Plywood">Marine Plywood </option>
                   <option value="Fire-Resistant Plywood">Fire-Resistant (FR) Plywood</option>
                   <option value="Laminated Veneer Lumber (LVL)">Laminated Veneer Lumber (LVL)</option>
                   <option value="Moisture Resistant MR MDF">Moisture Resistant (MR) MDF</option>
@@ -827,19 +857,6 @@
       </div>
 
       <div class="footer-col">
-        <h4>Product Lines</h4>
-        <ul>
-          <li><a href="#products">Marine Grade Plywood</a></li>
-          <li><a href="#products">Phenolic Film Faced Board</a></li>
-          <li><a href="#products">Acoustic Wall Paneling</a></li>
-          <li><a href="#products">Natural Wood Veneers</a></li>
-          <li><a href="#products">High Pressure Laminate (HPL)</a></li>
-          <li><a href="#products">Melamine Faced Chipboard (MFC)</a></li>
-          <li><a href="#products">3D Wood Mosaic Tiles</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col">
         <h4>Quick Navigation</h4>
         <ul>
           <li><a href="#hero">Home</a></li>
@@ -850,10 +867,10 @@
         </ul>
       </div>
 
-      <div class="footer-col contact-col">
+      <div class="footer-col contact-col" style="margin-left: auto;">
         <h4>UAE Sales Headquarters</h4>
         <p>📍 AlAhmed Elite Venture Co LLC <br>Latifa Tower 6th Floor, 606 Sheikh Zayed Road, Dubai <br>UAE</p>
-        <p>📞 <strong>Tel:</strong> (+971) 4 358582</p>
+
         <p>📱 <strong>Mob / WA:</strong> (+971) 50 7959535</p>
         <p>✉️ <strong>Sales Desk:</strong> sales@alahmeduae.com</p>
       </div>

@@ -127,7 +127,7 @@ const productSpecsData = {
     title: "Ahmed Film Face Shuttering Plywood",
     subtitle: "180 GSM DYNEA Phenolic Overlay Formwork Panel — BSTI Approved",
     badge: "180 GSM DYNEA Film",
-    image: "assets/images/plywood/film face plywood.jpg",
+    image: "assets/images/plywood/film face plywood.JPG",
     specifications: [
       { property: "Standard Formats", value: "1220 × 2440 mm (4' × 8')" },
       { property: "Standard Thicknesses", value: "12 mm, 19 mm (thickness up to 50 mm on client request)" },
@@ -440,7 +440,7 @@ const productSpecsData = {
     title: "Ahmed Slotted & Fluted Acoustic Wall Panels",
     subtitle: "21 mm Composite (12mm MDF + 9mm Recycled PET Felt) — NRC Up to 0.95",
     badge: "NRC 0.85 – 0.95",
-    image: "assets/images/acoustic panel/acoustic panel 3d exploded.PNG",
+    image: "assets/images/acoustic panel/acoustic panel 3d exploded.png",
     specifications: [
       { property: "Panel Dimensions", value: "2400 × 600 × 21 mm (also 600 × 600 mm, 128 × 2440 mm)" },
       { property: "Total Panel Thickness", value: "21 mm" },

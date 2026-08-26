@@ -37,7 +37,7 @@ function initProductFilter() {
   });
 }
 
-/* ─── 2. Full Product Specification Data (18 Products — Verified Against Official Datasheets) ── */
+/* ─── 2. Full Product Specification Data (18 Products) ──────────────────── */
 const productSpecsData = {
 
   'commercial-plywood': {
@@ -127,7 +127,7 @@ const productSpecsData = {
     title: "Ahmed Film Face Shuttering Plywood",
     subtitle: "180 GSM DYNEA Phenolic Overlay Formwork Panel — BSTI Approved",
     badge: "180 GSM DYNEA Film",
-    image: "assets/images/plywood/film face plywood.JPG",
+    image: "assets/images/plywood/film face plywood.jpg",
     specifications: [
       { property: "Standard Formats", value: "1220 × 2440 mm (4' × 8')" },
       { property: "Standard Thicknesses", value: "12 mm, 19 mm (thickness up to 50 mm on client request)" },
@@ -368,7 +368,7 @@ const productSpecsData = {
     image: "assets/images/LVL/lvl stack.jpg",
     specifications: [
       { property: "Standard Sheet Dimensions", value: "1220 × 2440 mm (Height × Width) / Lengths up to 12 Meters" },
-      { property: "Standard Thickness", value: "45 mm (Standard Door Frame)" },
+      { property: "Standard Thickness", value: "45 mm (Standard Door Frame) | 38 mm, 75 mm, 90 mm" },
       { property: "Material", value: "High-Quality Laminated Veneer Lumber (LVL)" },
       { property: "Grain Alignment", value: "Parallel Longitudinal Wood Veneer Orientation" },
       { property: "Moisture Content", value: "≤ 12%" },
@@ -440,7 +440,7 @@ const productSpecsData = {
     title: "Ahmed Slotted & Fluted Acoustic Wall Panels",
     subtitle: "21 mm Composite (12mm MDF + 9mm Recycled PET Felt) — NRC Up to 0.95",
     badge: "NRC 0.85 – 0.95",
-    image: "assets/images/acoustic panel/acoustic panel 3d exploded.png",
+    image: "assets/images/acoustic panel/acoustic panel 3d exploded.PNG",
     specifications: [
       { property: "Panel Dimensions", value: "2400 × 600 × 21 mm (also 600 × 600 mm, 128 × 2440 mm)" },
       { property: "Total Panel Thickness", value: "21 mm" },
@@ -513,6 +513,20 @@ const productSpecsData = {
     subtitle: "100% Grain-Consistent Engineered Wood Veneers — AV101–AV112 Series",
     badge: "100% Batch Consistency",
     image: "assets/images/decorative veneer/Recon veneer/Reconstituted veneer av101.jpeg",
+    gallery: [
+      { code: "AV 101", name: "Reconstituted Veneer AV101", desc: "Linear Quarter Cut Teak Grain", image: "assets/images/decorative veneer/Recon veneer/Reconstituted veneer av101.jpeg" },
+      { code: "AV 102", name: "Reconstituted Veneer AV102", desc: "Crown Cut American Walnut", image: "assets/images/decorative veneer/Recon veneer/Av 102.jpeg" },
+      { code: "AV 103", name: "Reconstituted Veneer AV103", desc: "Rift Cut White Oak", image: "assets/images/decorative veneer/Recon veneer/Av 103.jpeg" },
+      { code: "AV 104", name: "Reconstituted Veneer AV104", desc: "Smoked Silver Grey Ash", image: "assets/images/decorative veneer/Recon veneer/Av 104.jpeg" },
+      { code: "AV 105", name: "Reconstituted Veneer AV105", desc: "Straight Architectural Ebony", image: "assets/images/decorative veneer/Recon veneer/Av 105.jpeg" },
+      { code: "AV 106", name: "Reconstituted Veneer AV106", desc: "Warm Natural Cherry Grain", image: "assets/images/decorative veneer/Recon veneer/Av 106.jpeg" },
+      { code: "AV 107", name: "Reconstituted Veneer AV107", desc: "Deep Architectural Wenge", image: "assets/images/decorative veneer/Recon veneer/Av 107.jpeg" },
+      { code: "AV 108", name: "Reconstituted Veneer AV108", desc: "Scandinavian Nordic Birch", image: "assets/images/decorative veneer/Recon veneer/Av 108.jpeg" },
+      { code: "AV 109", name: "Reconstituted Veneer AV109", desc: "Mocha Walnut Wave", image: "assets/images/decorative veneer/Recon veneer/Av 109.jpeg" },
+      { code: "AV 110", name: "Reconstituted Veneer AV110", desc: "Silver Pearl Oak", image: "assets/images/decorative veneer/Recon veneer/Av 110.jpeg" },
+      { code: "AV 111", name: "Reconstituted Veneer AV111", desc: "Golden Teak Quarter Sawn", image: "assets/images/decorative veneer/Recon veneer/Av 111.jpeg" },
+      { code: "AV 112", name: "Reconstituted Veneer AV112", desc: "Charcoal Black Ash Wave", image: "assets/images/decorative veneer/Recon veneer/Av 112.jpeg" }
+    ],
     specifications: [
       { property: "Veneer Classification", value: "Reconstituted Engineered Veneer (Dye-Treated & Re-Composed)" },
       { property: "Architectural Swatch Series", value: "AV101 – AV112 (12 Curated Master Swatches)" },
@@ -544,7 +558,7 @@ const productSpecsData = {
   },
 
   hpl: {
-    title: "Ahmed High-Pressure Laminates (HPL)",
+    title: "Ahmed Anti-Virus & Anti-Bacterial HPL",
     subtitle: "EN 438-3 Certified High-Pressure Laminate — 99.99% Pathogen Reduction",
     badge: "EN 438-3 / 99.99% Kill Rate",
     image: "assets/images/HPL/hpl layer diagram.jpeg",
@@ -667,6 +681,11 @@ const productSpecsData = {
     subtitle: "100% Waterproof & Self-Extinguishing Plastic Foam Board — 9 Color Range",
     badge: "100% Waterproof",
     image: "assets/images/pvc panel/pvc panel.jpg",
+    gallery: [
+      { code: "PANEL", name: "Ahmed PVC Board", desc: "Silky Matte Expanded PVC Sheet", image: "assets/images/pvc panel/pvc panel.jpg" },
+      { code: "TEXTURE", name: "Core & Surface Texture", desc: "Zero-Absorption Calibrated Foam Edge", image: "assets/images/pvc panel/pvc panel close up.jpg" },
+      { code: "COLORS", name: "9 Color Palette & Specs", desc: "White, Wood, Red, Blue, Orange, Green, Brown, Black, Gray", image: "assets/images/pvc panel/pvc data sheet.png" }
+    ],
     specifications: [
       { property: "Material Classification", value: "100% Plastic Sheet (Lightweight Expanded PVC)" },
       { property: "Standard Sheet Size", value: "1220 × 2440 mm (4' × 8')" },
@@ -735,7 +754,7 @@ const productSpecsData = {
   }
 };
 
-/* ─── 3. Spec Modal with Product Image Header ─────────────────────────────── */
+/* ─── 3. Interactive Technical Spec & Material Gallery Modal ─────────────── */
 function initProductSpecModal() {
   document.addEventListener('click', (e) => {
     if (e.target.closest('.btn-sample-trigger')) return;
@@ -779,61 +798,218 @@ function openProductSpecModal(productKey) {
 
   const featureItems = (data.features || []).map(f => `<li>${f}</li>`).join('');
 
-  const imageHtml = data.image ? `
-    <div class="modal-product-media-header">
-      <div class="modal-product-img-box">
-        <img src="${data.image}" alt="${data.title}" class="modal-product-img">
-      </div>
+  const isDualTab = (productKey === 'recon-veneer' || productKey === 'pvc') && data.gallery && data.gallery.length > 0;
+
+  // Build Tab Bar if dual tab
+  const tabBarHtml = isDualTab ? `
+    <div class="modal-tab-bar">
+      <button class="modal-tab-btn active" onclick="switchModalTab('specTab', this)">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+          <polyline points="14 2 14 8 20 8"></polyline>
+          <line x1="16" y1="13" x2="8" y2="13"></line>
+          <line x1="16" y1="17" x2="8" y2="17"></line>
+          <polyline points="10 9 9 9 8 9"></polyline>
+        </svg>
+        Technical Specifications
+      </button>
+      <button class="modal-tab-btn" onclick="switchModalTab('galleryTab', this)">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+          <circle cx="8.5" cy="8.5" r="1.5"></circle>
+          <polyline points="21 15 16 10 5 21"></polyline>
+        </svg>
+        ${productKey === 'recon-veneer' ? 'AV Swatch Gallery (12 Designs)' : 'Material & Finish Gallery'}
+      </button>
     </div>` : '';
 
+  // Build Gallery Content for Option 4
+  let galleryContentHtml = '';
+  if (isDualTab) {
+    if (productKey === 'recon-veneer') {
+      const swatchesHtml = data.gallery.map((sw, idx) => `
+        <div class="swatch-card ${idx === 0 ? 'active' : ''}" onclick="selectSwatch('${sw.code}', '${sw.name}', '${sw.image}', '${sw.desc}', this)">
+          <div class="swatch-img-wrap">
+            <img src="${sw.image}" alt="${sw.name}" class="swatch-thumb" loading="lazy">
+          </div>
+          <div class="swatch-info">
+            <strong class="swatch-code">${sw.code}</strong>
+            <span class="swatch-desc">${sw.desc}</span>
+          </div>
+        </div>`).join('');
+
+      galleryContentHtml = `
+        <div id="galleryTab" class="modal-tab-pane" style="display:none;">
+          <div class="gallery-dual-layout">
+            <div class="gallery-preview-col">
+              <div class="gallery-featured-card" onclick="openLightbox(document.getElementById('reconFeaturedImg').src, document.getElementById('reconFeaturedTitle').innerText)">
+                <img src="${data.gallery[0].image}" alt="${data.gallery[0].name}" id="reconFeaturedImg" class="gallery-featured-img">
+                <div class="modal-zoom-pill">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    <line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line>
+                  </svg>
+                  <span>Click to Inspect High-Res Texture</span>
+                </div>
+                <span class="modal-floating-badge" id="reconFeaturedBreadcrumb">${data.gallery[0].code}</span>
+              </div>
+              <div class="gallery-featured-meta">
+                <h4 id="reconFeaturedTitle" style="color:var(--color-text-main); font-size:1.15rem; margin-bottom:0.25rem;">${data.gallery[0].name}</h4>
+                <p id="reconFeaturedDesc" style="color:var(--color-text-muted); font-size:0.875rem; margin-bottom:1rem;">${data.gallery[0].desc}</p>
+                <a id="reconSampleBtn" href="https://wa.me/971507959535?text=Hi, I need a sample of Recon Veneer Swatch ${encodeURIComponent(data.gallery[0].code)}" target="_blank" class="btn btn-whatsapp btn-sm btn-block">
+                  Request Sample of ${data.gallery[0].code}
+                </a>
+              </div>
+            </div>
+
+            <div class="gallery-grid-col">
+              <div class="gallery-grid-header">
+                <span class="badge-red">12 ARCHITECTURAL SWATCHES</span>
+                <p style="font-size:0.85rem; color:var(--color-text-muted); margin:0.3rem 0 0.8rem;">Select a swatch to inspect grain structure &amp; prefill sample request.</p>
+              </div>
+              <div class="gallery-swatch-grid">
+                ${swatchesHtml}
+              </div>
+            </div>
+          </div>
+        </div>`;
+    } else if (productKey === 'pvc') {
+      const pvcCardsHtml = data.gallery.map((item, idx) => `
+        <div class="pvc-gallery-card" onclick="openLightbox('${item.image}', '${item.name} — ${item.desc}')">
+          <div class="pvc-img-wrap">
+            <img src="${item.image}" alt="${item.name}" class="pvc-thumb">
+            <div class="modal-zoom-pill compact">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </div>
+          </div>
+          <div class="pvc-info">
+            <strong>${item.name}</strong>
+            <span>${item.desc}</span>
+          </div>
+        </div>`).join('');
+
+      galleryContentHtml = `
+        <div id="galleryTab" class="modal-tab-pane" style="display:none;">
+          <div class="pvc-gallery-layout">
+            <div class="pvc-cards-grid">
+              ${pvcCardsHtml}
+            </div>
+            <div class="pvc-color-swatch-box">
+              <h4>9 Architectural Color Palette</h4>
+              <p style="font-size:0.85rem; color:var(--color-text-muted); margin-bottom:0.8rem;">Standard stock colors with custom RAL options upon project request:</p>
+              <div class="pvc-color-pill-row">
+                <span class="color-pill" style="border-left: 6px solid #ffffff;">White</span>
+                <span class="color-pill" style="border-left: 6px solid #8b5a2b;">Wood</span>
+                <span class="color-pill" style="border-left: 6px solid #e61c24;">Red</span>
+                <span class="color-pill" style="border-left: 6px solid #1e3a8a;">Blue</span>
+                <span class="color-pill" style="border-left: 6px solid #f97316;">Orange</span>
+                <span class="color-pill" style="border-left: 6px solid #16a34a;">Green</span>
+                <span class="color-pill" style="border-left: 6px solid #78350f;">Brown</span>
+                <span class="color-pill" style="border-left: 6px solid #171717;">Black</span>
+                <span class="color-pill" style="border-left: 6px solid #9ca3af;">Gray</span>
+              </div>
+            </div>
+            <div style="margin-top:1.5rem; text-align:center;">
+              <a href="https://wa.me/971507959535?text=Hi, I need a PVC Board sample kit with color swatches" target="_blank" class="btn btn-whatsapp">
+                Request PVC Board Sample Kit
+              </a>
+            </div>
+          </div>
+        </div>`;
+    }
+  }
+
+  // OPTION 1: Split-Screen Architectural Modal Template
   modal.innerHTML = `
-    <div class="modal-card spec-modal-card">
+    <div class="modal-card spec-modal-split-card">
       <button class="modal-close" onclick="closeSpecModal()">&times;</button>
 
-      ${imageHtml}
+      ${tabBarHtml}
 
-      <div class="modal-header">
-        <span class="badge-red">${data.badge}</span>
-        <h2>${data.title}</h2>
-        <p class="modal-subtitle">${data.subtitle}</p>
+      <div id="specTab" class="modal-tab-pane active">
+        <div class="modal-split-grid">
+          
+          <!-- LEFT COLUMN: Product Visual Showcase -->
+          <div class="modal-split-visual">
+            <div class="modal-media-showcase" onclick="openLightbox('${data.image}', '${data.title}')">
+              <img src="${data.image}" alt="${data.title}" class="modal-hero-product-img">
+              <div class="modal-zoom-pill">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                  <line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line>
+                </svg>
+                <span>Click to Inspect High-Res Texture</span>
+              </div>
+              <span class="modal-floating-badge">${data.badge}</span>
+            </div>
+
+            <div class="modal-visual-footer">
+              <div class="modal-visual-meta">
+                <span class="meta-dot"></span>
+                <span>100% Calibrated Factory Certified</span>
+              </div>
+              <div class="modal-visual-ctas">
+                <a href="https://wa.me/971507959535?text=Hi, I need a physical sample of ${encodeURIComponent(data.title)}"
+                   target="_blank" class="btn btn-whatsapp btn-sm btn-block">
+                  Request Physical Sample
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- RIGHT COLUMN: Engineering Specifications -->
+          <div class="modal-split-content">
+            <div class="modal-header-compact">
+              <span class="badge-red">${data.badge}</span>
+              <h2>${data.title}</h2>
+              <p class="modal-subtitle">${data.subtitle}</p>
+            </div>
+
+            <div class="spec-section">
+              <h3>Technical Specifications</h3>
+              <table class="spec-table">
+                <thead><tr><th>Property</th><th>Value</th></tr></thead>
+                <tbody>${specRows}</tbody>
+              </table>
+            </div>
+
+            ${strengthRows ? `
+            <div class="spec-section">
+              <h3>Mechanical &amp; Performance Data</h3>
+              <table class="spec-table">
+                <thead><tr><th>Property</th><th>Value</th></tr></thead>
+                <tbody>${strengthRows}</tbody>
+              </table>
+            </div>` : ''}
+
+            <div class="spec-section">
+              <h3>Key Features &amp; Advantages</h3>
+              <ul class="spec-feature-list">${featureItems}</ul>
+            </div>
+
+            <div class="spec-section">
+              <h3>Typical Applications</h3>
+              <p class="spec-app-text">${(data.applications || []).join(' &bull; ')}</p>
+            </div>
+
+            <div class="modal-action-buttons">
+              <a href="#rfq" class="btn btn-red btn-lg" onclick="closeSpecModal()">
+                Request Project Quotation
+              </a>
+              <a href="https://wa.me/971507959535?text=Hi, I want to inquire about bulk ordering ${encodeURIComponent(data.title)}"
+                 target="_blank" class="btn btn-outline btn-lg">
+                WhatsApp Estimator
+              </a>
+            </div>
+          </div>
+
+        </div>
       </div>
 
-      <div class="spec-section">
-        <h3>Technical Specifications</h3>
-        <table class="spec-table">
-          <thead><tr><th>Property</th><th>Value</th></tr></thead>
-          <tbody>${specRows}</tbody>
-        </table>
-      </div>
+      ${galleryContentHtml}
 
-      ${strengthRows ? `
-      <div class="spec-section">
-        <h3>Mechanical & Performance Data</h3>
-        <table class="spec-table">
-          <thead><tr><th>Property</th><th>Value</th></tr></thead>
-          <tbody>${strengthRows}</tbody>
-        </table>
-      </div>` : ''}
-
-      <div class="spec-section">
-        <h3>Key Features & Advantages</h3>
-        <ul class="spec-feature-list">${featureItems}</ul>
-      </div>
-
-      <div class="spec-section">
-        <h3>Typical Applications</h3>
-        <p class="spec-app-text">${(data.applications || []).join(' &bull; ')}</p>
-      </div>
-
-      <div class="modal-action-buttons">
-        <a href="#rfq" class="btn btn-red btn-lg" onclick="closeSpecModal()">
-          Request Quotation
-        </a>
-        <a href="https://wa.me/971507959535?text=Hi, I need a sample of ${encodeURIComponent(data.title)}"
-           target="_blank" class="btn btn-whatsapp btn-lg">
-          Request Sample
-        </a>
-      </div>
     </div>`;
 
   modal.classList.add('open');
@@ -842,6 +1018,44 @@ function openProductSpecModal(productKey) {
 function closeSpecModal() {
   const modal = document.getElementById('specModal');
   if (modal) modal.classList.remove('open');
+}
+
+/* ─── Modal Tab & Swatch Helpers ─────────────────────────────────────────── */
+function switchModalTab(tabId, btnElement) {
+  const modal = document.getElementById('specModal');
+  if (!modal) return;
+  modal.querySelectorAll('.modal-tab-btn').forEach(b => b.classList.remove('active'));
+  modal.querySelectorAll('.modal-tab-pane').forEach(p => {
+    p.classList.remove('active');
+    p.style.display = 'none';
+  });
+
+  btnElement.classList.add('active');
+  const targetPane = document.getElementById(tabId);
+  if (targetPane) {
+    targetPane.classList.add('active');
+    targetPane.style.display = 'flex';
+  }
+}
+
+function selectSwatch(code, name, imgUrl, desc, cardElement) {
+  const previewImg = document.getElementById('reconFeaturedImg');
+  const previewTitle = document.getElementById('reconFeaturedTitle');
+  const previewDesc = document.getElementById('reconFeaturedDesc');
+  const previewBadge = document.getElementById('reconFeaturedBreadcrumb');
+  const sampleBtn = document.getElementById('reconSampleBtn');
+
+  if (previewImg) previewImg.src = imgUrl;
+  if (previewTitle) previewTitle.innerText = name;
+  if (previewDesc) previewDesc.innerText = desc;
+  if (previewBadge) previewBadge.innerText = code;
+  if (sampleBtn) {
+    sampleBtn.innerText = `Request Sample of ${code}`;
+    sampleBtn.href = `https://wa.me/971507959535?text=Hi, I need a sample of Recon Veneer Swatch ${encodeURIComponent(code)} (${encodeURIComponent(name)})`;
+  }
+
+  document.querySelectorAll('.swatch-card').forEach(c => c.classList.remove('active'));
+  if (cardElement) cardElement.classList.add('active');
 }
 
 /* ─── 4. Interactive Layer Inspector ─────────────────────────────────────── */
@@ -927,12 +1141,12 @@ const inspectorData = {
     specs: [
       "Bending Strength (MOR): 60 – 70 MPa (N/mm²) | Compressive: 40 – 50 MPa",
       "Modulus of Elasticity (MOE): 11,000 – 14,000 N/mm²",
-      "Standard Thicknesses: 45mm Door Frames ",
+      "Standard Thicknesses: 45mm Door Frames | Beams 38mm, 75mm, 90mm up to 12m length",
       "Fire Rating: Class B, 30-Minute structural integrity"
     ]
   },
   mrmdf: {
-    title: "Moisture Resistant (MR)MDF",
+    title: "Moisture Resistant (MR) Green Core MDF",
     subtitle: "MUF Resin Bonded Hydrophobic Fiberboard — EN 622-5 (Option 1 V313)",
     description: "Engineered with Melamine-Urea-Formaldehyde (MUF) resin and green dye indicator to provide exceptional dimensional stability in high humidity environments.",
     layers: [
@@ -949,7 +1163,7 @@ const inspectorData = {
     ]
   },
   frmdf: {
-    title: "Fire Retardant (FR) MDF",
+    title: "Fire Retardant (FR) Red Core MDF",
     subtitle: "Civil Defense Certified Flame Retardant Board (Euroclass B-s2,d0)",
     description: "Impregnated with flame-inhibiting mineral salts (red/pink core indicator) that inhibit flame spread and reduce smoke generation in high-occupancy commercial spaces.",
     layers: [
@@ -1040,20 +1254,20 @@ function initSampleModal() {
 
 /* ─── 7. RFQ & Sample Form Handlers ─────────────────────────────────────── */
 function handleRFQSubmit() {
-  const name = document.getElementById('rfqName').value;
-  const company = document.getElementById('rfqCompany').value;
-  const phone = document.getElementById('rfqPhone').value;
+  const name     = document.getElementById('rfqName').value;
+  const company  = document.getElementById('rfqCompany').value;
+  const phone    = document.getElementById('rfqPhone').value;
   const material = document.getElementById('rfqMaterial').value;
   const quantity = document.getElementById('rfqQuantity').value;
-  const notes = document.getElementById('rfqNotes').value;
+  const notes    = document.getElementById('rfqNotes').value;
 
   const text = `Hello Al Ahmed UAE Sales Team,\n\nQuotation Request:\n\n• Name: ${name}\n• Company: ${company}\n• Contact: ${phone}\n• Material: ${material}\n• Quantity: ${quantity}\n• Details: ${notes}`;
   window.open(`https://wa.me/971507959535?text=${encodeURIComponent(text)}`, '_blank');
 }
 
 function handleSampleSubmit() {
-  const name = document.getElementById('sampleName').value;
-  const studio = document.getElementById('sampleStudio').value;
+  const name    = document.getElementById('sampleName').value;
+  const studio  = document.getElementById('sampleStudio').value;
   const address = document.getElementById('sampleAddress').value;
   alert(`Sample Dispatch Confirmed!\n\nRecipient: ${name} (${studio})\nAddress: ${address}\n\nOur UAE courier team will dispatch your Specifier Kit within 24 hours.`);
   const modal = document.getElementById('sampleModal');
@@ -1101,33 +1315,50 @@ function initMobileMenu() {
 }
 
 /* ─── 11. Fullscreen Image Lightbox Modal ────────────────────────────────── */
-function initImageLightbox() {
-  const modal = document.getElementById('imageLightboxModal');
+function openLightbox(imgSrc, imgCaption) {
+  let modal = document.getElementById('imageLightboxModal');
+  if (!modal) {
+    modal = document.createElement('div');
+    modal.id = 'imageLightboxModal';
+    modal.className = 'image-lightbox-modal';
+    modal.innerHTML = `
+      <div class="lightbox-overlay" id="lightboxOverlay"></div>
+      <div class="lightbox-content">
+        <button class="lightbox-close" id="lightboxClose" aria-label="Close Lightbox">&times;</button>
+        <img src="" alt="Enlarged View" id="lightboxImage" class="lightbox-img">
+        <div class="lightbox-caption" id="lightboxCaption"></div>
+      </div>`;
+    document.body.appendChild(modal);
+
+    modal.querySelector('#lightboxClose').addEventListener('click', closeLightbox);
+    modal.querySelector('#lightboxOverlay').addEventListener('click', closeLightbox);
+  }
+
   const lightboxImg = document.getElementById('lightboxImage');
   const caption = document.getElementById('lightboxCaption');
-  const closeBtn = document.getElementById('lightboxClose');
-  const overlay = document.getElementById('lightboxOverlay');
 
-  if (!modal || !lightboxImg) return;
-
-  function openLightbox(imgSrc, imgCaption) {
-    lightboxImg.src = imgSrc;
-    if (caption) {
-      caption.textContent = imgCaption || '';
-      caption.style.display = imgCaption ? 'block' : 'none';
-    }
-    modal.classList.add('open');
-    document.body.style.overflow = 'hidden';
+  if (lightboxImg) lightboxImg.src = imgSrc;
+  if (caption) {
+    caption.textContent = imgCaption || '';
+    caption.style.display = imgCaption ? 'block' : 'none';
   }
+  modal.classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
 
-  function closeLightbox() {
+function closeLightbox() {
+  const modal = document.getElementById('imageLightboxModal');
+  if (modal) {
     modal.classList.remove('open');
     document.body.style.overflow = '';
+    const lightboxImg = document.getElementById('lightboxImage');
     setTimeout(() => {
-      lightboxImg.src = '';
+      if (lightboxImg) lightboxImg.src = '';
     }, 300);
   }
+}
 
+function initImageLightbox() {
   // Bind to cards with data-lightbox or images inside facility cards
   document.querySelectorAll('[data-lightbox]').forEach(card => {
     card.addEventListener('click', (e) => {
@@ -1138,13 +1369,13 @@ function initImageLightbox() {
     });
   });
 
-  if (closeBtn) closeBtn.addEventListener('click', closeLightbox);
-  if (overlay) overlay.addEventListener('click', closeLightbox);
-
   // Close on Escape key
   document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && modal.classList.contains('open')) {
-      closeLightbox();
+    if (e.key === 'Escape') {
+      const modal = document.getElementById('imageLightboxModal');
+      if (modal && modal.classList.contains('open')) {
+        closeLightbox();
+      }
     }
   });
 }

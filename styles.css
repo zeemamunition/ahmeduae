@@ -2139,6 +2139,515 @@ footer .container,
 }
 
 /* ==========================================================================
+   SPLIT-SCREEN PRODUCT SPEC MODAL (Option 1) & GALLERY TABS (Option 4)
+   ========================================================================== */
+
+/* ── Split-Screen Card Container ───────────────────────────────────────────── */
+.spec-modal-split-card {
+  max-width: 1100px;
+  width: 95%;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  max-height: 92vh;
+}
+
+/* ── Tab Bar (only shown for recon-veneer & PVC) ──────────────────────────── */
+.modal-tab-bar {
+  display: flex;
+  gap: 0;
+  background: var(--color-bg-dark);
+  border-bottom: 2px solid var(--color-border);
+  flex-shrink: 0;
+}
+
+.modal-tab-btn {
+  flex: 1;
+  padding: 0.9rem 1.2rem;
+  background: transparent;
+  border: none;
+  color: var(--color-text-muted);
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: color 0.25s ease, border-color 0.25s ease;
+  border-bottom: 3px solid transparent;
+  margin-bottom: -2px;
+}
+
+.modal-tab-btn:hover {
+  color: var(--color-text-main);
+}
+
+.modal-tab-btn.active {
+  color: var(--color-red-light);
+  border-bottom-color: var(--color-red-light);
+}
+
+.modal-tab-btn svg {
+  flex-shrink: 0;
+}
+
+/* ── Tab Panes ─────────────────────────────────────────────────────────────── */
+.modal-tab-pane {
+  display: none;
+  flex: 1;
+  min-height: 0;
+}
+
+.modal-tab-pane.active {
+  display: flex;
+  flex-direction: column;
+}
+
+/* When NO tab-bar exists (non-dual-tab products), specTab is the only pane */
+#specTab.active {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 0;
+}
+
+/* ── Split Grid: Side-by-Side Layout ───────────────────────────────────────── */
+.modal-split-grid {
+  display: grid;
+  grid-template-columns: 42% 1fr;
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+}
+
+/* ── Left Column: Visual Showcase ──────────────────────────────────────────── */
+.modal-split-visual {
+  background: var(--color-bg-dark);
+  border-right: 1px solid var(--color-border);
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  padding: 1.5rem;
+}
+
+.modal-media-showcase {
+  position: relative;
+  cursor: pointer;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.modal-hero-product-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: var(--radius-md);
+  transition: transform 0.4s ease;
+}
+
+.modal-media-showcase:hover .modal-hero-product-img {
+  transform: scale(1.03);
+}
+
+.modal-zoom-pill {
+  position: absolute;
+  bottom: 0.8rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(8px);
+  color: #ffffff;
+  padding: 0.35rem 0.8rem;
+  border-radius: var(--radius-full);
+  font-size: 0.72rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  white-space: nowrap;
+  pointer-events: none;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.modal-zoom-pill.compact {
+  padding: 0.25rem 0.5rem;
+  font-size: 0;
+}
+
+.modal-floating-badge {
+  position: absolute;
+  top: 0.8rem;
+  left: 0.8rem;
+  background: var(--color-red-primary);
+  color: #ffffff;
+  padding: 0.25rem 0.65rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.modal-visual-footer {
+  margin-top: 1.2rem;
+  flex-shrink: 0;
+}
+
+.modal-visual-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.78rem;
+  color: var(--color-text-dim);
+  margin-bottom: 1rem;
+}
+
+.meta-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #16a34a;
+  flex-shrink: 0;
+}
+
+.modal-visual-ctas .btn-block {
+  width: 100%;
+  text-align: center;
+}
+
+/* ── Right Column: Specifications Content ──────────────────────────────────── */
+.modal-split-content {
+  overflow-y: auto;
+  padding: 2rem 2.2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-header-compact {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.modal-header-compact h2 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--color-text-main);
+  margin: 0.5rem 0 0.3rem;
+  letter-spacing: -0.5px;
+}
+
+.modal-subtitle {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  margin: 0;
+}
+
+.modal-action-buttons {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: auto;
+  padding-top: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.modal-action-buttons .btn {
+  flex: 1;
+  min-width: 180px;
+  text-align: center;
+}
+
+/* ── Close Button (repositioned for split card) ────────────────────────────── */
+.spec-modal-split-card .modal-close {
+  top: 0.8rem;
+  right: 0.8rem;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.5);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  transition: all 0.2s ease;
+}
+
+.spec-modal-split-card .modal-close:hover {
+  background: var(--color-red-primary);
+  border-color: var(--color-red-primary);
+  transform: scale(1.1);
+}
+
+/* ==========================================================================
+   OPTION 4: DUAL-TAB GALLERY STYLES (Recon Veneer & PVC)
+   ========================================================================== */
+
+/* ── Recon Veneer Gallery ──────────────────────────────────────────────────── */
+.gallery-dual-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  height: 100%;
+  overflow: hidden;
+}
+
+.gallery-preview-col {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.gallery-featured-card {
+  position: relative;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  cursor: pointer;
+  border: 1px solid var(--color-border);
+}
+
+.gallery-featured-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.gallery-featured-card:hover .gallery-featured-img {
+  transform: scale(1.03);
+}
+
+.gallery-featured-meta {
+  margin-top: 1rem;
+}
+
+.gallery-grid-col {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.gallery-grid-header {
+  flex-shrink: 0;
+  margin-bottom: 0.5rem;
+}
+
+.gallery-swatch-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.6rem;
+  overflow-y: auto;
+  padding-bottom: 0.5rem;
+}
+
+/* ── Swatch Cards ──────────────────────────────────────────────────────────── */
+.swatch-card {
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  overflow: hidden;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.swatch-card:hover,
+.swatch-card.active {
+  border-color: var(--color-red-light);
+  box-shadow: 0 0 0 2px var(--color-red-glow);
+}
+
+.swatch-img-wrap {
+  aspect-ratio: 1;
+  overflow: hidden;
+}
+
+.swatch-thumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.swatch-card:hover .swatch-thumb {
+  transform: scale(1.08);
+}
+
+.swatch-info {
+  padding: 0.35rem 0.5rem 0.4rem;
+}
+
+.swatch-code {
+  display: block;
+  font-size: 0.7rem;
+  color: var(--color-text-main);
+  font-weight: 700;
+}
+
+.swatch-desc {
+  display: block;
+  font-size: 0.62rem;
+  color: var(--color-text-dim);
+  line-height: 1.3;
+}
+
+/* ── PVC Gallery ───────────────────────────────────────────────────────────── */
+.pvc-gallery-layout {
+  padding: 1.5rem;
+  overflow-y: auto;
+}
+
+.pvc-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.pvc-gallery-card {
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  cursor: pointer;
+  transition: border-color 0.25s ease, transform 0.2s ease;
+}
+
+.pvc-gallery-card:hover {
+  border-color: var(--color-red-light);
+  transform: translateY(-2px);
+}
+
+.pvc-img-wrap {
+  position: relative;
+  aspect-ratio: 4/3;
+  overflow: hidden;
+}
+
+.pvc-thumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.pvc-gallery-card:hover .pvc-thumb {
+  transform: scale(1.05);
+}
+
+.pvc-info {
+  padding: 0.5rem 0.6rem;
+}
+
+.pvc-info strong {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--color-text-main);
+}
+
+.pvc-info span {
+  display: block;
+  font-size: 0.72rem;
+  color: var(--color-text-dim);
+}
+
+.pvc-color-swatch-box {
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 1.2rem 1.5rem;
+}
+
+.pvc-color-swatch-box h4 {
+  font-size: 1rem;
+  color: var(--color-text-main);
+  margin-bottom: 0.4rem;
+}
+
+.pvc-color-pill-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.color-pill {
+  background: var(--color-bg-dark);
+  border: 1px solid var(--color-border);
+  padding: 0.35rem 0.8rem 0.35rem 0.5rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.78rem;
+  color: var(--color-text-muted);
+  font-weight: 600;
+}
+
+/* ==========================================================================
+   SPLIT-SCREEN MODAL — RESPONSIVE
+   ========================================================================== */
+
+@media (max-width: 768px) {
+  .spec-modal-split-card {
+    max-height: 95vh;
+    width: 100%;
+    border-radius: var(--radius-md);
+  }
+
+  .modal-split-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .modal-split-visual {
+    border-right: none;
+    border-bottom: 1px solid var(--color-border);
+    max-height: 35vh;
+  }
+
+  .modal-split-content {
+    padding: 1.5rem;
+  }
+
+  .gallery-dual-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-swatch-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .modal-action-buttons {
+    flex-direction: column;
+  }
+
+  .modal-action-buttons .btn {
+    min-width: unset;
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery-swatch-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .pvc-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .modal-tab-btn {
+    font-size: 0.75rem;
+    padding: 0.7rem 0.6rem;
+  }
+}
+
+/* ==========================================================================
    CLEAN EDITORIAL ABOUT US PAGE STYLES
    ========================================================================== */
 
